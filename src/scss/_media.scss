@@ -1,5 +1,19 @@
 @use "./variables";
 
+@media (hover: hover) {
+  a:hover,
+  .nav-bar__link:hover {
+    color: variables.$red;
+  }
+}
+
+@media (hover: none) {
+  .header__logo,
+  .footer__logo {
+    color: variables.$red;
+  }
+}
+
 @media (max-width: 1200px) {
   .dermatology {
     &__wrapper {
@@ -209,13 +223,23 @@
 }
 
 @media (max-width: 512px) {
+  .nav-bar__menu {
+    align-items: center;
+    justify-content: center;
+  }
+
   .feedback {
     &__slide {
       padding: 0.875rem;
     }
 
     &__photo {
+      align-self: flex-start;
       min-width: 5.75rem;
+
+      img {
+        border-radius: 5%;
+      }
     }
 
     &__star {

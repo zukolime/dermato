@@ -1,7 +1,5 @@
-// import { hideMessage } from "./helpers";
-
 import { statusBlockStyle } from "./statusBlockStyle";
-import { modalSuccess } from "./modal";
+import { modalForm, modalSuccess } from "./modal";
 
 export const sendForm = (formSelector) => {
   const form = document.querySelector(formSelector);
@@ -19,9 +17,7 @@ export const sendForm = (formSelector) => {
   };
 
   const submitForm = () => {
-    const modal = document.querySelector(".modal");
     const formElements = form.querySelectorAll("input");
-    const modalBackdrop = document.querySelector(".modal-backdrop");
 
     const formData = new FormData(form);
     const formBody = {};
@@ -36,12 +32,8 @@ export const sendForm = (formSelector) => {
           input.value = "";
           input.classList.remove("success");
         });
-        modal.classList.remove("show");
-        modalBackdrop.remove();
-        modal.style.display = "none";
-        document.body.style = "";
-        document.body.classList.remove("modal-open");
-        modalSuccess();
+        modalForm.hide();
+        modalSuccess.show();
       })
       .catch((error) => {
         statusBlockStyle(modal, statusBlock, "Erro no envio dos dados", "red");

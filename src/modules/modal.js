@@ -1,6 +1,6 @@
-export const modalSuccess = () => {
-  const successModal = new bootstrap.Modal(
-    document.querySelector(".modal-success")
-  );
-  successModal.show();
-};
+export const modalForm = new bootstrap.Modal(
+  document.getElementById("modal-form")
+);
+export const modalSuccess = new bootstrap.Modal(
+  document.getElementById("modal-success")
+);

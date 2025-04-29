@@ -1,0 +1,62 @@
+@use "../variables";
+
+.services {
+  background-color: variables.$beige;
+  padding-top: 10.9375rem;
+  margin-top: -16.5375rem;
+  box-shadow: variables.$shadow-base;
+
+  &__title {
+    color: variables.$red;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3.75rem;
+  }
+
+  &__cards-wrappers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3.75rem;
+    padding-bottom: 6.5625rem;
+  }
+
+  &__card {
+    padding: 1.25rem 2.3125rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &:nth-child(even) {
+      .services__card-title {
+        color: variables.$red;
+      }
+    }
+  }
+
+  &__card-img {
+    float: left;
+    margin-right: 1.25rem;
+    padding: 0.4375rem;
+    background-color: #ffccd1;
+    border-radius: 100%;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+
+  &__card-title {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__card-description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+}

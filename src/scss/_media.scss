@@ -1,0 +1,225 @@
+@use "./variables";
+
+@media (max-width: 1200px) {
+  .dermatology {
+    &__wrapper {
+      gap: 3.5rem;
+    }
+
+    &__img-bg {
+      display: none;
+    }
+
+    &__img {
+      position: static;
+    }
+  }
+
+  .dermatology-accordion {
+    &__wrapper {
+      gap: 3.5rem;
+    }
+
+    &__img-bg {
+      display: none;
+    }
+
+    &__img {
+      position: static;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .link-btn {
+    padding: 0.5rem 1.875rem;
+  }
+
+  .welcome {
+    padding-bottom: 4.6875rem;
+
+    &__description {
+      gap: 1rem;
+    }
+  }
+
+  .banner {
+    &__wrapper {
+      padding: 2.125rem 0.3rem;
+    }
+  }
+
+  .services {
+    margin-top: -10rem;
+    padding-top: 8rem;
+
+    &__title {
+      margin-bottom: 2rem;
+    }
+
+    &__cards-wrappers {
+      padding-bottom: 3.75rem;
+      gap: 1.75rem;
+    }
+  }
+
+  .dermatology {
+    padding-bottom: 4.6875rem;
+
+    &__title {
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      padding-top: 0;
+    }
+
+    &__wrapper {
+      padding-top: 2.375rem;
+    }
+
+    &__img-wrapper {
+      display: none;
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+
+  .dermatology-accordion {
+    &__wrapper {
+      padding-top: 2.375rem;
+      padding-bottom: 3.5rem;
+    }
+
+    &__menu {
+      width: 100%;
+    }
+
+    &__img-wrapper {
+      display: none;
+    }
+  }
+
+  .feedback {
+    padding-bottom: 2.5rem;
+
+    &__title {
+      padding-top: 2.375rem;
+      padding-bottom: 2.375rem;
+    }
+
+    &__arrow-prev,
+    &__arrow-next {
+      top: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome,
+  .banner__wrapper,
+  .services,
+  .dermatology,
+  .dermatology-accordion,
+  .feedback,
+  .footer {
+    box-shadow: none;
+  }
+
+  .welcome {
+    padding-top: 1.2rem;
+    padding-bottom: 0;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__description,
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .banner {
+    background-color: variables.$beige;
+
+    &__wrapper {
+      flex-direction: column;
+      gap: 1rem;
+      transform: none;
+    }
+
+    &__quantity-info {
+      width: 100%;
+      gap: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .services {
+    margin-top: 0;
+    padding-top: 1.8rem;
+
+    &__title {
+      margin-bottom: 1.85rem;
+    }
+
+    &__cards-wrappers {
+      padding-bottom: 1.75rem;
+      gap: 1.75rem;
+    }
+  }
+
+  .dermatology {
+    &__wrapper {
+      display: flex;
+      padding-top: 1.8rem;
+      gap: 7.5rem;
+    }
+
+    &__content {
+      padding-top: 0;
+    }
+  }
+
+  .feedback {
+    &__arrow-prev,
+    &__arrow-next {
+      display: none;
+    }
+  }
+
+  .footer {
+    padding-top: 3rem;
+
+    &__wrapper {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__title {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 512px) {
+  .feedback {
+    &__slide {
+      padding: 0.875rem;
+    }
+
+    &__photo {
+      min-width: 5.75rem;
+    }
+
+    &__star {
+      font-size: clamp(0.938rem, -0.417rem + 6.77vw, 1.75rem);
+    }
+  }
+}

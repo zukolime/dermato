@@ -1,0 +1,16 @@
+@use "../variables";
+
+.header {
+  background-color: variables.$light-beige;
+  font-size: 1.5rem;
+
+  &__logo,
+  .nav-bar__link {
+    color: variables.$brown;
+    font-weight: 700;
+  }
+
+  .nav-bar__link:hover {
+    color: variables.$red;
+  }
+}

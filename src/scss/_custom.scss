@@ -1,0 +1,61 @@
+@use "variables";
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: variables.$red;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url("/img/arrow-icons/icon-down.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/img/arrow-icons/icon-up.svg");
+  background-size: contain;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-danger:focus {
+  box-shadow: none;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e900";
+}
+
+.swiper {
+  width: 90%;
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 0.8125rem;
+  height: 0.8125rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$red;
+}
+
+.form-control:focus {
+  border-color: #ffccd1;
+  box-shadow: 0 0 0 0.25rem rgba(255, 165, 174, 0.25);
+}

@@ -1,0 +1,30 @@
+@use "../variables";
+
+.welcome {
+  padding-top: 3.125rem;
+  padding-bottom: 7.1875rem;
+  background-color: variables.$light-beige;
+
+  &__title {
+    font-size: clamp(1.5rem, 1.272rem + 1.14vw, 2.625rem);
+    font-weight: 700;
+    color: variables.$red;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    font-weight: 400;
+    color: variables.$black;
+  }
+
+  &__text {
+    font-size: clamp(1rem, 0.949rem + 0.25vw, 1.25rem);
+  }
+
+  &__img {
+    max-width: 38.5625rem;
+  }
+}

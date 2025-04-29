@@ -1,0 +1,22 @@
+@use "../node_modules/swiper/swiper.scss";
+@use "../node_modules/swiper/modules/navigation.scss";
+@use "../node_modules/swiper/modules/pagination.scss";
+
+@use "scss/variables";
+
+@use "scss/components/link";
+@use "scss/base";
+@use "scss/fonts";
+@use "scss/custom";
+
+@use "scss/blocks/header";
+@use "scss/blocks/welcome";
+@use "scss/blocks/services";
+@use "scss/blocks/banner";
+@use "scss/blocks/dermatology";
+@use "scss/blocks/dermatology-accordion";
+@use "scss/blocks/feedback";
+@use "scss/blocks/footer";
+@use "scss/blocks/modal-success";
+
+@use "scss/media";

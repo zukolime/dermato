@@ -1,0 +1,57 @@
+@use "../variables";
+
+.footer {
+  color: #fff;
+  font-weight: 700;
+  background-color: variables.$brown;
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: variables.$shadow-base;
+
+  &__logo {
+    font-size: clamp(1.5rem, 1.159rem + 0.71vw, 2rem);
+    line-height: 1.5rem;
+  }
+
+  &__title {
+    font-size: clamp(1.25rem, 1.199rem + 0.25vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    padding-bottom: 2rem;
+  }
+
+  &__address {
+    &::after,
+    &::before {
+      content: "";
+      width: clamp(12.5rem, 5.536rem + 14.29vw, 22.5rem);
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  &__socials a {
+    flex: block;
+    width: 2rem;
+    height: 2rem;
+
+    &:hover {
+      filter: invert(73%) sepia(116%) saturate(2870%) hue-rotate(344deg)
+        brightness(99%) contrast(97%);
+    }
+  }
+
+  &__information-list {
+    list-style: none;
+  }
+}

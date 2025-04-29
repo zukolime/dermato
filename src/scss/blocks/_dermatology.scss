@@ -1,0 +1,68 @@
+@use "../variables";
+
+.dermatology {
+  padding-bottom: 8rem;
+  background-color: #fcf8f5;
+  box-shadow: variables.$shadow-base;
+
+  &__wrapper {
+    display: flex;
+    padding-top: 5rem;
+    gap: 7.5rem;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__img-bg {
+    width: 21.25rem;
+    height: 31.875rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffccd1;
+  }
+
+  &__img {
+    width: 21.25rem;
+    height: 31.875rem;
+    position: absolute;
+    top: 3.25rem;
+    right: 3.3125rem;
+  }
+
+  &__content {
+    padding-top: 1.5625rem;
+  }
+
+  &__title {
+    color: variables.$red;
+    font-weight: 700;
+    margin-bottom: 2.375rem;
+  }
+
+  &__description {
+    color: #2e2e2e;
+    font-size: clamp(1rem, 0.949rem + 0.25vw, 1.25rem);
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-weight: 400;
+    gap: 0.125rem;
+    margin-bottom: 1.25rem;
+    list-style-position: inside;
+
+    li::marker {
+      font-size: 0.625rem;
+    }
+  }
+}

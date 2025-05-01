@@ -7,11 +7,11 @@
 }
 
 .accordion-button::after {
-  background-image: url("/img/arrow-icons/icon-down.svg");
+  background-image: url("./assets/img/arrow-icons/icon-down.svg");
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("/img/arrow-icons/icon-up.svg");
+  background-image: url("./assets/img/arrow-icons/icon-up.svg");
   background-size: contain;
 }
 
